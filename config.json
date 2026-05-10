@@ -1,0 +1,39 @@
+{
+  "trading": {
+    "enable_forex": true,
+    "enable_stocks": false,
+    "enable_crypto": false,
+    "enable_commodities": false,
+    "account_balance": 10000.0,
+    "risk_per_trade": 0.02,
+    "max_position_size": 0.05
+  },
+  "forex": {
+    "pairs": ["EURUSD", "GBPUSD", "USDJPY", "AUDUSD"],
+    "timeframes": ["1m", "5m", "15m", "1h", "4h", "1d"],
+    "default_timeframe": "1h"
+  },
+  "api": {
+    "provider": "alpaca",
+    "api_key": "your_api_key_here",
+    "account_id": "your_account_id_here",
+    "sandbox": true
+  },
+  "strategy": {
+    "enabled_strategies": ["moving_average_crossover", "rsi_strategy", "llama_strategy"],
+    "lookback_periods": 20,
+    "update_interval_seconds": 60
+  },
+  "risk_management": {
+    "stop_loss_percent": 2.0,
+    "take_profit_percent": 5.0,
+    "trailing_stop_enabled": false,
+    "trailing_stop_percent": 1.5,
+    "max_drawdown_percent": 10.0
+  },
+  "logging": {
+    "level": "INFO",
+    "log_file": "trading_bot.log",
+    "log_trades": true
+  }
+}
