@@ -20,7 +20,14 @@
     "sandbox": true
   },
   "strategy": {
-    "enabled_strategies": ["moving_average_crossover", "rsi_strategy", "llama_strategy"],
+    "enabled_strategies": [
+      "moving_average_crossover",
+      "rsi_strategy",
+      "trend_momentum",
+      "mean_reversion",
+      "volatility_breakout",
+      "llama_strategy"
+    ],
     "lookback_periods": 20,
     "update_interval_seconds": 60
   },
